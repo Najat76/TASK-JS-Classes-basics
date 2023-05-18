@@ -111,10 +111,10 @@ const movie3 = new Movie("Cruch", 60, Horror);
 const movie4 = new Movie("Titanic", 60, romance);
 
 // Bonus Question Trial : using Reduce
-let average;
+averageRating(rating) {
 //const initialValue = 0;
-average = return (this.rating.forEach((rating1) => this.rating.reduce(rating1, currentValue, 0))) / this.rating.length;
-
+return (this.rating.forEach((rating1) => this.rating.reduce(rating1, this.rating, 0))) / this.rating.length;
+};
 //console.log(rate(100));
 //
 /** (Question 3): (1000 Points)
@@ -126,4 +126,19 @@ average = return (this.rating.forEach((rating1) => this.rating.reduce(rating1, c
  * +
  */
 
-// write the class here
+class Actor extends Person {
+  movies = [];
+  constructor( firstName, lastName, gender, birthYear) {
+    super(firstName, lastName, gender, birthYear); 
+  }
+
+  addMovie (movie) {
+    const movie1 = new Movie("Pacifier", 160, comedy);
+  };
+
+  show() {
+    return this.present() + ', it is a ' + this.model;
+  }
+}
+
+
